@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="'IE=edge">
+    <meta name="viewport" content="interactive-widget=resizes-content" />
+    <title>Narind Verma Website</title>
+    <link rel="stylesheet" href ="style.css">
+    <script src="https://kit.fontawesome.com/e0d81805a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<canvas id="bubble-canvas"></canvas>
+
+<div id="header">
+    <div class="contain">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">    
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>            
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AIML Enthusiast</p>
+            <h1>Hi, I'm <span>Narind Verma</span><br></h1>
+            <h2 class="typing-text"><span class="type"></span></h2>
+
+        </div>
+    </div>
+</div>
+<!-----------------About------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user..jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Sophmore Computer Science Engineering Student with a 
+                    specialization in Artificial Intelligence and Machine Learning.
+                </p><p>
+                    With a solid foundation in machine learning and programming, I’m continuously exploring new technologies and improving my skills.</p>
+                <p> 
+                    Always curious and motivated, I enjoy collaborating on projects that challenge me and help me grow.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App </li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>High School</span><br>Kendriya Vidyalaya Number 3, Jaipur<br>Class 12: 90%<br>Class 10: 04.2 GPA</li>
+                    <li><span>College</span><br>University of Petroleum and Energy Studies<br>Current Grade: 9.5 (Sem 3)</li>
+                    <li>
+                    <span>Certifications</span><br>
+                    Completed IBM DevOps and Coursera Machine Learning courses</li>
+                    <li><a href="https://www.linkedin.com/in/narind-verma-09846b282/" target="_blank" rel="noopener noreferrer"><span>More</span></a>
+                    </li>
+                </ul>
+                </div>  
+             </div>
+        </div>
+    </div>
+</div>
+<!----------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class ="sub-title">MY SERVICES</h1>
+        <div class="services-list">
+            <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="#">Learn More</a>   
+            </div>
+        <div>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h2>Web Design</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="#">Learn More</a>   
+            </div>
+        <div>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h2>Web Design</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="#">Learn More</a>   
+            </div>
+    </div>
+</div>
+</div>
+<!-----------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/b.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting ind</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/b.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting ind</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/b.jpg">
+                <div class="layer">
+                    <h3>Game App</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting ind</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Hidden works -->
+            <div class="work" style="display: none;">
+                <img src="images/b.jpg">
+                <div class="layer">
+                    <h3>Finance App</h3>
+                    <p>Track expenses and manage budgets with ease.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work" style="display: none;">
+                <img src="images/b.jpg">
+                <div class="layer">
+                    <h3>Chat App</h3>
+                    <p>Real-time messaging app with secure encryption.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+<div class="btn-container">
+  <a href="#" class="btn" id="seeMoreBtn">See More</a>
+  <a href="#" class="btn" id="showLessBtn" style="display: none;">Show Less</a>
+</div>
+
+
+    </div>
+</div>
+
+
+
+<!--------------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ash.softech@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href="https://mail.google.com/"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/narind-verma-09846b282/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Narind1"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type = "text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder = "Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © Copyright Narind Verma.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+</div>
+
+
+
+
+<script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+    for (tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+<script>
+
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPdSvPc_xmVzrCqERm6_-KesGed3df-ApXvzOoiuhtmtbggcvVGgQ3iFpq_vNGK8JlRA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      } )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+  document.getElementById("seeMoreBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const hiddenWorks = document.querySelectorAll(".work[style*='display: none']");
+    hiddenWorks.forEach(work => work.style.display = "block");
+    this.style.display = "none";
+  });
+</script>
+<script>
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const showLessBtn = document.getElementById("showLessBtn");
+  const hiddenWorks = document.querySelectorAll(".work[style*='display: none']");
+
+  seeMoreBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    hiddenWorks.forEach(work => work.style.display = "block");
+    seeMoreBtn.style.display = "none";
+    showLessBtn.style.display = "inline-block";
+  });
+
+  showLessBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    hiddenWorks.forEach(work => work.style.display = "none");
+    seeMoreBtn.style.display = "inline-block";
+    showLessBtn.style.display = "none";
+  });
+</script>
+<script>
+  const texts = [
+  "AI Enthusiast",
+  "Machine Learning Dev",
+  "Passionate About Data",
+  "Builds Smart Models"
+];
+  let count = 0;
+  let index = 0;
+  let currentText = '';
+  let letter = '';
+
+  (function type(){
+    if (count === texts.length) {
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector('.type').textContent = letter;
+    if(letter.length === currentText.length){
+      setTimeout(() => {
+        index = 0;
+        count++;
+        setTimeout(type, 500);
+      }, 1500);
+    } else {
+      setTimeout(type, 100);
+    }
+  })();
+</script>
+<!--<script>
+  const canvas = document.getElementById('bubble-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let bubbles = [];
+  const mouse = { x: null, y: null };
+
+  window.addEventListener('mousemove', function (event) {
+    mouse.x = event.x;
+    mouse.y = event.y;
+  });
+
+  class Bubble {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.radius = Math.random() * 8 + 2;
+      this.dx = (Math.random() - 0.5) * 1;
+      this.dy = (Math.random() - 0.5) * 1;
+      this.color = 'rgba(255, 255, 255, 0.1)';
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+
+    update() {
+      // Repel from mouse
+      const dist = Math.hypot(this.x - mouse.x, this.y - mouse.y);
+      if (dist < 80) {
+        const angle = Math.atan2(this.y - mouse.y, this.x - mouse.x);
+        this.x += Math.cos(angle) * 2;
+        this.y += Math.sin(angle) * 2;
+      }
+
+      this.x += this.dx;
+      this.y += this.dy;
+
+      // Bounce off edges
+      if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+
+      this.draw();
+    }
+  }
+
+  function init() {
+    bubbles = [];
+    for (let i = 0; i < 190; i++) {
+      bubbles.push(new Bubble());
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    bubbles.forEach((bubble) => bubble.update());
+  }
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    init();
+  });
+
+  init();
+  animate();
+</script>-->
+<a href="#header" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+<script>
+  const scrollBtn = document.querySelector(".scroll-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+</script>
+
+
+</body>
+</html>
